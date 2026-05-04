@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student App</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Student Profile App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="card">
+    <h1>Student Profile App</h1>
+    <p><b>Name:</b> Vaibhavi</p>
+    <p><b>Department:</b> Information Technology</p>
+    <p><b>Subject:</b> Cloud Computing</p>
 
-<div class="container">
-    <h1>Student Web Application</h1>
-    <p>This app is deployed using AWS Amplify (PaaS).</p>
+    <button onclick="showMsg()">Check Deployment</button>
+    <h3 id="msg"></h3>
+  </div>
 
-    <button onclick="showMessage()">Check Deployment</button>
-
-    <p id="message"></p>
-</div>
-
-<script>
-function showMessage() {
-    document.getElementById("message").innerText =
-        "✅ Web application deployed successfully!";
-}
-</script>
-
+  <script>
+    function showMsg() {
+      document.getElementById("msg").innerText =
+        "Web Application Deployed Successfully on AWS Amplify!";
+    }
+  </script>
 </body>
 </html>
