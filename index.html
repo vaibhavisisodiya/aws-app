@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Web Application</h1>
+    <p>This app is deployed using AWS Amplify (PaaS).</p>
+
+    <button onclick="showMessage()">Check Deployment</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerText =
+        "✅ Web application deployed successfully!";
+}
+</script>
+
+</body>
+</html>
